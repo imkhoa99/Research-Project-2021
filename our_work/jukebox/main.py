@@ -168,6 +168,7 @@ if __name__ == "__main__":
             # Set up VQVAE
             model = "5b"  # or "1b_lyrics"
             hps = Hyperparams()
+            
             hps.sr = 44100
             hps.n_samples = 3 if model == "5b_lyrics" else 8
             hps.name = "samples"
